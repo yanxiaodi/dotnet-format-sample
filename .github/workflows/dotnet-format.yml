@@ -21,6 +21,6 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./SampleWebApi/SampleWebApi.sln
     - name: Format
-      run: dotnet format --verify-no-changes --verbosity diagnostic
+      run: dotnet format ./SampleWebApi/SampleWebApi.sln --verify-no-changes --verbosity diagnostic
